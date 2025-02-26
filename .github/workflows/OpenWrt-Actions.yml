@@ -10,6 +10,12 @@
 name: 编译OpenWrt固件
 
 on:
+  release:
+    types: [published]
+
+  watch:
+    types: [started]
+    
   workflow_dispatch:
     inputs:
 
